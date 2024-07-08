@@ -1,0 +1,128 @@
+* Base styles */
+body {
+  font-family: 'Open Sans', sans-serif; /* Set the default font */
+  background-color: #fcfcff; /* Light background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Header styles */
+h1 {
+  background: linear-gradient(45deg, #57d4e7, #ffc3a0); /* Gradient background */
+  color: #c32fc1; /* Text color */
+  padding: 1em; /* Padding around the header */
+  width: 100%; /* Full width */
+  text-align: center; /* Centered text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Alternative font */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 2px; /* Space between letters */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin-bottom: 2em; /* Space below the header */
+}
+
+/* Gallery container */
+#gallery {
+  margin: 2em auto; /* Center with margin */
+  max-width: 1200px; /* Max width */
+  text-align: center; /* Centered text */
+  position: relative; /* Relative positioning */
+}
+
+/* Figure styles for featured image */
+figure {
+  margin: 0 auto; /* Centered */
+  padding: 1em; /* Padding */
+  background-color: #d0cbcb; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Light shadow */
+  position: relative; /* Relative positioning */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Featured image */
+#featured {
+  max-width: 100%; /* Full width */
+  border-radius: 8px; /* Rounded corners */
+  border: 10px solid #ffafbd; /* Default border color */
+  transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out; /* Smooth transition */
+}
+
+#featured:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Caption below featured image */
+figcaption {
+  margin-top: 1em; /* Space above caption */
+  font-size: 1.4em; /* Larger font size */
+  color: #333; /* Dark text color */
+  font-weight: 600; /* Bold text */
+}
+
+/* Thumbnail list */
+#thumbnails {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* No padding */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items */
+  gap: 1em; /* Space between items */
+  margin-top: 2em; /* Space above list */
+}
+
+/* Individual thumbnail item */
+#thumbnails li {
+  display: inline-block; /* Inline-block layout */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Thumbnail image styles */
+#thumbnails img {
+  width: 240px; /* Fixed width */
+  height: 160px; /* Fixed height */
+  border-radius: 8px; /* Rounded corners */
+  filter: grayscale(100%); /* Grayscale effect */
+  transition: filter 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+#thumbnails img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Active thumbnail image */
+#thumbnails img.active {
+  filter: grayscale(0%); /* Remove grayscale */
+  transform: scale(1.1); /* Slightly larger */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+/* Navigation arrows */
+.fas {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for exact centering */
+  font-size: 2.5em; /* Large font size */
+  color: #220bd6; /* Initial color */
+  cursor: pointer; /* Pointer cursor */
+  z-index: 10; /* Above other elements */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.fas:hover {
+  color: #ffc3a0; /* Change color on hover */
+  transform: translateY(-50%) scale(1.2); /* Enlarge on hover */
+}
+
+/* Left arrow */
+#prev {
+  left: 10px; /* Position on the left */
+}
+
+/* Right arrow */
+#next {
+  right: 10px; /* Position on the right */
+}

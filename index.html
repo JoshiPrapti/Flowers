@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery | COMP1073</title>
+    <!-- Link to the external CSS file for styling the gallery -->
+    <link rel="stylesheet" href="css/gallery.css" />
+    <!-- Include FontAwesome for arrow icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Main heading of the gallery -->
+    <h1>Image Gallery</h1>
+    <!-- Section to contain the entire gallery -->
+    <section id="gallery">
+      <!-- Figure element to group featured image and its caption -->
+      <figure>
+        <!-- Left arrow icon for previous image navigation -->
+        <i class="fas fa-arrow-left" id="prev"></i>
+        <!-- Featured image with an initial source and alt text -->
+        <img
+          id="featured"
+          src="images/flowers-pink-large.jpg"
+          alt="Featured Image"
+          width="1200"
+          height="800"
+        />
+        <!-- Right arrow icon for next image navigation -->
+        <i class="fas fa-arrow-right" id="next"></i>
+        <!-- Caption for the featured image -->
+        <figcaption id="caption">Pink Flowers</figcaption>
+      </figure>
+      <!-- Unordered list to contain thumbnail images -->
+      <ul id="thumbnails"></ul>
+    </section>
+    <!-- Link to the external JavaScript file for gallery functionality -->
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
